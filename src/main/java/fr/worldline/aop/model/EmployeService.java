@@ -10,7 +10,10 @@ public class EmployeService {
 	
 	public Employe getEmployeById(Integer id) {
 		System.out.println("Method getEmployeById called");
-		return new Employe();
+		Employe employe = new Employe();
+		employe.setFirstName("Steve");
+		employe.setLastName("Parker");
+		return employe;
 	}
 	
 	public List<Employe> getAllEmploye() {
